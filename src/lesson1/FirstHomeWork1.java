@@ -80,10 +80,9 @@ class FirstHomeWork3 {
         System.out.print("Введите год: ");
         Scanner year = new Scanner(System.in);
         int x = year.nextInt();
-        if((x%100 == 0 && x%400 == 0) || (x%4 == 0 && x%100 > 0)) {
+        if ((x % 100 == 0 && x % 400 == 0) || (x % 4 == 0 && x % 100 > 0)) {
             System.out.print(x + " - високосный год!");
-        }
-        else {
+        } else {
             System.out.print(x + " - не является високосным годом.");
         }
     }
@@ -94,16 +93,16 @@ class FirstHomeWork4 {
         int[] array1 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         int massMax = array1.length;
 
-        for(int i = 0; i<massMax; i++){
+        for (int i = 0; i < massMax; i++) {
             System.out.print(i + "-" + array1[i] + " ");
         }
-        for(int i = 0; i<massMax; i++){
-            if(array1[i] < 6){
+        for (int i = 0; i < massMax; i++) {
+            if (array1[i] < 6) {
                 array1[i] *= 2;
             }
         }
         System.out.println(" ");
-        for(int i = 0; i<massMax; i++){
+        for (int i = 0; i < massMax; i++) {
             System.out.print(i + "-" + array1[i] + " ");
         }
     }
@@ -128,21 +127,19 @@ class FirstHomeWork5 {
 
 class FirstHomeWork6 {
     public static void main(String[] args) {
-        int[] array1 = {0,1,2,3,4,5,6,7};
+        int[] array1 = {0, 1, 2, 3, 4, 5, 6, 7};
         int a = 8;
         int b = 0;
 
-        for(int i = 0; i<array1.length; i++){
-            if(a > array1[i]){
+        for (int i = 0; i < array1.length; i++) {
+            if (a > array1[i]) {
                 a = array1[i];
-            }
-            else a = a;
+            } else a = a;
         }
-        for(int i = 0; i<array1.length; i++){
-            if(b < array1[i]){
+        for (int i = 0; i < array1.length; i++) {
+            if (b < array1[i]) {
                 b = array1[i];
-            }
-            else b = b;
+            } else b = b;
         }
         System.out.println("Наибольшее число массива: " + b);
         System.out.println("Наименьшее число массива: " + a);
@@ -155,15 +152,15 @@ class FirstHomeWork7 {
         int j = 0;
         int massMax = array1.length;
 
-        for(int i = 0; i<massMax; i++){
+        for (int i = 0; i < massMax; i++) {
             System.out.print(i + "-" + array1[i] + " ");
 
         }
         System.out.println(" ");
-        for(int i = 0; i<massMax; i++, j=j+3){
+        for (int i = 0; i < massMax; i++, j = j + 3) {
             array1[i] = j;
         }
-        for(int i = 0; i<massMax; i++){
+        for (int i = 0; i < massMax; i++) {
             System.out.print(i + "-" + array1[i] + " ");
         }
     }
